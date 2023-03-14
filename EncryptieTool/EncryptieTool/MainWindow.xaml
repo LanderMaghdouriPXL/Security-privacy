@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EncryptieTool"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="Green">
     <Grid>
-
+        <TabControl>
+            <TabItem Header="Sleutels aanmaken">
+                <StackPanel>
+                    <WrapPanel Margin="0,30,0,0" HorizontalAlignment="Center">
+                        <Label Name="LblNaamKey" FontSize="18">Naam van de sleutel:</Label>
+                        <TextBox x:Name="TxtNaamKey" FontSize="18" Width="200"></TextBox>
+                    </WrapPanel>
+                    <WrapPanel HorizontalAlignment="Center">
+                        <Button x:Name="BtnAESKey" Height="45" Width="160" Margin="20" FontSize="15">Genereer AES sleutel</Button>
+                        <Button x:Name="BtnRSAKey" Height="45" Width="160" Margin="20" FontSize="15">Genereer RSA sleutels</Button>
+                    </WrapPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="AES">
+                
+            </TabItem>
+            <TabItem Header="RSA">
+                
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
